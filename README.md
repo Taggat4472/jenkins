@@ -1,0 +1,1 @@
+Test pour création de pipeline
