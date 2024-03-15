@@ -25,9 +25,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the container'
-                sh "sudo docker pull taggat4472/jenkins:${params.version}"
-                sh "sudo docker run --name jenkins-container -d taggat/jenkins:${params.version}"
+                sh "sudo docker pull taggat4472/jenkins:latest"
+                sh "sudo docker run --name jenkins-container -d taggat/jenkins:latest"
 	        }
         }
     }
-}
