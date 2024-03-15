@@ -18,7 +18,7 @@ pipeline {
           stage('Push') {
             steps {
                 echo 'Pushing docker image'
-                sh 'sudo docker login -u taggat4472 -p dckr_pat_cUJ98qCUFljnYMzQ9gJfcw2oC5Q'
+                sh 'sudo docker login -u taggat4472 -p TMT447293hnz'
                 sh "sudo docker push taggat4472/jenkins:lates"
 	        }
         }
